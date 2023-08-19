@@ -68,6 +68,8 @@ nav li {
   list-style: none;
   font-family: Roboto;
   text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 nav li:hover {
   color: rgb(166, 114, 69);
@@ -147,7 +149,7 @@ nav .header_socials:hover {
   background-color: rgb(27, 27, 27);
   position: relative;
   z-index: 1;
-  margin-bottom: 300px;
+  padding-bottom: 280px;
 }
 .menu::after {
   content: "";
@@ -189,6 +191,8 @@ nav .header_socials:hover {
   color: white;
   font-family: Roboto;
   position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .menu ul li::after {
   content: "";
@@ -265,6 +269,172 @@ nav .header_socials:hover {
   margin-left: 20px;
   margin-top: 10px;
   color: gray;
+}
+
+.info_resto {
+  background-color: rgb(27, 27, 27);
+  padding-top: 100px;
+  margin-top: 100px;
+}
+.info_resto .reservation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 80%;
+  margin: 0 auto;
+}
+.info_resto .reservation .reservation_left {
+  text-align: center;
+  background-color: black;
+}
+.info_resto .reservation .reservation_left .reservation_left_container {
+  border: 1px dashed white;
+  width: 80%;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+.info_resto .reservation .reservation_left #time_reservation_title {
+  color: rgb(166, 114, 69);
+  font-family: Allura;
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 20px;
+}
+.info_resto .reservation .reservation_left #open_reservation-title {
+  text-align: center;
+  font-family: Poppins;
+  text-transform: uppercase;
+  color: white;
+  margin-top: -20px;
+}
+.info_resto .reservation .reservation_left img {
+  margin: 40px auto;
+}
+.info_resto .reservation .reservation_left h2 {
+  font-family: Poppins;
+  text-transform: uppercase;
+  color: rgb(166, 114, 69);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.info_resto .reservation .reservation_left p {
+  font-family: Roboto;
+  color: white;
+  margin-bottom: 40px;
+}
+.info_resto .reservation .reservation_right {
+  padding-top: 50px;
+  background-color: rgb(250, 250, 250);
+}
+.info_resto .reservation .reservation_right #reservation_title {
+  color: rgb(166, 114, 69);
+  font-family: Allura;
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: none;
+}
+.info_resto .reservation .reservation_right h2 {
+  text-align: center;
+  font-family: Poppins;
+  text-transform: uppercase;
+  color: rgb(32, 32, 32);
+}
+.info_resto .reservation .reservation_right img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto;
+}
+.info_resto .reservation .formulaire {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.info_resto .reservation .formulaire .people,
+.info_resto .reservation .formulaire .date,
+.info_resto .reservation .formulaire .time_reservation,
+.info_resto .reservation .formulaire .name,
+.info_resto .reservation .formulaire .phone,
+.info_resto .reservation .formulaire .mail {
+  position: relative;
+}
+.info_resto .reservation .formulaire .people::after,
+.info_resto .reservation .formulaire .date::after,
+.info_resto .reservation .formulaire .time_reservation::after,
+.info_resto .reservation .formulaire .name::after,
+.info_resto .reservation .formulaire .phone::after,
+.info_resto .reservation .formulaire .mail::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  position: absolute;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+  left: 0;
+  top: 130%;
+}
+.info_resto .reservation .formulaire input {
+  width: 200px;
+  margin-top: 50px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.info_resto .reservation .formulaire input::-webkit-input-placeholder {
+  color: black;
+  font-family: Poppins;
+}
+.info_resto .reservation .formulaire input::-moz-placeholder {
+  color: black;
+  font-family: Poppins;
+}
+.info_resto .reservation .formulaire input:-ms-input-placeholder {
+  color: black;
+  font-family: Poppins;
+}
+.info_resto .reservation .formulaire input::-ms-input-placeholder {
+  color: black;
+  font-family: Poppins;
+}
+.info_resto .reservation .formulaire input::placeholder {
+  color: black;
+  font-family: Poppins;
+}
+.info_resto .reservation .submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+.info_resto .reservation #submit_button {
+  border: none;
+  background-color: black;
+  border-radius: 30px;
+  height: 50px;
+  color: white;
+  width: 200px;
+  font-family: Poppins;
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.info_resto .reservation #submit_button:hover {
+  background-color: gray;
 }
 
 * {

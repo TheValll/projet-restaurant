@@ -1,0 +1,140 @@
+.info_resto {
+  background-color: $color3;
+  padding-top: 100px;
+  margin-top: 100px;
+
+  .reservation {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 80%;
+    margin: 0 auto;
+    .reservation_left {
+      text-align: center;
+      background-color: $color2;
+      .reservation_left_container {
+        border: 1px dashed $color1;
+        width: 80%;
+        margin: 30px auto;
+        padding-bottom: 30px;
+      }
+      #time_reservation_title {
+        color: $color4;
+        font-family: Allura;
+        font-size: 3rem;
+        font-weight: normal;
+        text-transform: none;
+        margin-top: 20px;
+      }
+      #open_reservation-title {
+        text-align: center;
+        font-family: Poppins;
+        text-transform: uppercase;
+        color: $color1;
+        margin-top: -20px;
+      }
+      img{
+        margin: 40px auto;
+      }
+      h2{
+        font-family: Poppins;
+        text-transform: uppercase;
+        color: $color4;
+        font-weight: normal;
+        margin-bottom: 20px;
+      }
+      p{
+        font-family: Roboto;
+        color: $color1;
+        margin-bottom: 40px;
+      }
+    }
+    .reservation_right {
+      padding-top: 50px;
+      background-color: rgb(250, 250, 250);
+
+      #reservation_title {
+        color: $color4;
+        font-family: Allura;
+        font-size: 3rem;
+        font-weight: normal;
+        text-transform: none;
+      }
+      h2 {
+        text-align: center;
+        font-family: Poppins;
+        text-transform: uppercase;
+        color: rgb(32, 32, 32);
+      }
+      img {
+        display: flex;
+        margin: 30px auto;
+      }
+    }
+    .formulaire {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      width: 80%;
+      margin: 0 auto;
+
+      .people,
+      .date,
+      .time_reservation,
+      .name,
+      .phone,
+      .mail {
+        position: relative;
+
+        &::after {
+          content: "";
+          height: 1px;
+          width: 100%;
+          background-color: gray;
+          position: absolute;
+          transform: translate(-50% -50%);
+          left: 0;
+          top: 130%;
+        }
+      }
+      input {
+        width: 200px;
+        margin-top: 50px;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        cursor: pointer;
+
+        &::placeholder {
+          color: $color2;
+          font-family: Poppins;
+        }
+      }
+    }
+    .submit-button {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    #submit_button {
+      border: none;
+      background-color: $color2;
+      border-radius: 30px;
+      height: 50px;
+      color: $color1;
+      width: 200px;
+      font-family: Poppins;
+      font-weight: bold;
+      letter-spacing: 7px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}

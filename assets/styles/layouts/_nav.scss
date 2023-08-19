@@ -17,6 +17,7 @@ nav {
     list-style: none;
     font-family: Roboto;
     text-transform: uppercase;
+    transition: 0.2s;
 
     &:hover {
       color: $color4;

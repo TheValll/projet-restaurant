@@ -1,283 +1,328 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheResto</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TheResto</title>
-  <link rel="stylesheet" href="./assets/styles/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <h2>Resto</h2>
-      <ul>
-        <li>home</li>
-        <li>reservations</li>
-        <li>menu</li>
-        <li>blog</li>
-        <li>pages</li>
-        <li>shop</li>
-        <li>contact</li>
-      </ul>
-      <div class="header_socials">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </nav>
-    <div class="header-container">
-      <h2>Welcome to</h2>
-      <h1>the resto</h1>
-      <img src="./assets/img/ic-plate-big.png" alt="logo cuillere et fouchette" />
-      <p>we serve only the freshest ingredients !</p>
-    </div>
-  </header>
-  <section class="discover">
-    <div class="discover_left">
-      <div class="discover_left_container">
-        <h3>Discover</h3>
-        <h4>our store</h4>
-        <img src="./assets/img/ic-plate.png" alt="logo cuillere et fouchette" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          iusto delectus rem ex esse rerum maiores perferendis, tempore quia
-          fuga saepe sit fugit sint eveniet cupiditate voluptatum eum earum
-          ullam consectetur est blanditiis quidem vel!
-        </p>
-        <img src="./assets/img/avatar-01.jpg" alt="chef cock image" id="avatar1" />
-        <h5>Russell Stephens</h5>
-        <p id="chefcock">chef cock</p>
-      </div>
-    </div>
-    <div class="discover_right"></div>
-  </section>
-  <section class="menu">
-    <h3>Discover</h3>
-    <img src="./assets/img/ic-plate.png" alt="logo cuillere et fouchette" id="menu_logo" />
-    <ul>
-      <li>Breakfast</li>
-      <li>Lunch</li>
-      <li>Dinner</li>
-      <li>Drinks</li>
-      <li>Other</li>
-    </ul>
-    <div class="menus">
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-01.jpg" alt="mushrrom" />
-          <div class="details">
-            <h4>italian source mushroom</h4>
-            <p>Mushrrom / Garlic / Veggies</p>
-          </div>
-        </div>
-        <h4 class="price">$12</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-02.jpg" alt="fried" />
-          <div class="details">
-            <h4>fried potatoes with garlic</h4>
-            <p>Potatoes / Oilive Oil / Garlic</p>
-          </div>
-        </div>
-        <h4 class="price">$22</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-03.jpg" alt="tenu" />
-          <div class="details">
-            <h4>tenu roast source</h4>
-            <p>Tuna / Potatoes / Rice</p>
-          </div>
-        </div>
-        <h4 class="price">$15</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-04.jpg" alt="pork" />
-          <div class="details">
-            <h4>roast pork (4sticks)</h4>
-            <p>Pork / Veggies / Shoyu</p>
-          </div>
-        </div>
-        <h4 class="price">$18</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-05.jpg" alt="chicken" />
-          <div class="details">
-            <h4>salted fried chicken</h4>
-            <p>Chicken / Oilve Oil / Salt</p>
-          </div>
-        </div>
-        <h4 class="price">$20</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-06.jpg" alt="crab" />
-          <div class="details">
-            <h4>crab with curry sources</h4>
-            <p>Crab / Potatoes / Rice</p>
-          </div>
-        </div>
-        <h4 class="price">$14</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-07.jpg" alt="slamon steak" />
-          <div class="details">
-            <h4>imported slamon steak</h4>
-            <p>Salmon / Veggies / Oil</p>
-          </div>
-        </div>
-        <h4 class="price">$16</h4>
-      </div>
-      <div class="description">
-        <div class="description_left">
-          <img src="./assets/img/dish-item-08.jpg" alt="pizza" />
-          <div class="details">
-            <h4>baked potato pizza</h4>
-            <p>Potato / Bread / Cheese</p>
-          </div>
-        </div>
-        <h4 class="price">$25</h4>
-      </div>
-    </div>
-  </section>
-  <section class="reservation">
-    <div class="reservation_left">
-      <h2>Time</h2>
-      <h2>open</h2>
-      <img src="./assets/img/ic-plate.png" alt="logo cuillere et fouchette" />
-      <h2>monday - friday</h2>
-      <p>7AM - 11AM(Breakfast) <br />11AM - 10PM(Lunch/Dinner)</p>
-      <h2>saturday - sunday</h2>
-      <p>8AM - 1PM(Brunch) <br />1PM - 9PM(Lunch/Dinner)</p>
-      <h2>+15 890 979 25 52</h2>
-    </div>
-    <div class="reservation_right">
-      <h2>Reservation</h2>
-      <h2>online booking</h2>
-      <img src="./assets/img/ic-plate.png" alt="logo cuillere et fouchette" />
-      <div class="formulaire_reservation">
-        <form action="action.php">
-          <div class="people">
-            <input list="numbers" name="people" id="people" placeholder="People" />
-            <datalist id="numbers">
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-            </datalist>
-          </div>
-          <div class="date">
-            <input type="date" id="start" value="2020-07-15" min="2018-01-01" max="2023-12-31" />
-          </div>
-          <div class="TIME">
-            <input type="time" id="appt" min="09:00" max="19:00" required />
-          </div>
-          <div class="name">
-            <input type="text" id="name" placeholder="Name" />
-          </div>
-          <div class="phone">
-            <input type="text" id="phone" placeholder="Phone" />
-          </div>
-          <div class="mail">
-            <input type="email" id="mail" placeholder="Email" />
-          </div>
-          <div class="submit-button">
-            <input type="submit" id="submit_button" value="BOOK NOW" />
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-  <section class="event">
-    <h2>Upcoming</h2>
-    <h2>our event</h2>
-    <img src="./assets/img/ic-plate.png" alt="logo cuillere et fouchette" />
-    <div class="event_container">
-      <div class="event1">
-        <img src="./assets/img/event-01.jpg" alt="image event 1" />
-        <div class="event1_right">
-          <h3>Night Inspirescu Party</h3>
-          <div class="events_details">
-            <p><i class="fa-solid fa-location-dot"></i>Restaurant Resto</p>
-            <p><i class="fa-regular fa-clock"></i>10:00pm - 6:00am</p>
-          </div>
-          <h3>buy tickets</h3>
-        </div>
-      </div>
-      <div class="event2">
-        <img src="./assets/img/event-02.jpg" alt="image event 1" />
-        <div class="event2_right">
-          <h3>DJ RobagRuhme</h3>
-          <div class="events_details">
-            <p><i class="fa-solid fa-location-dot"></i>Restaurant Resto</p>
-            <p><i class="fa-regular fa-clock"></i>10:00pm - 6:00am</p>
-          </div>
-          <h3>buy tickets</h3>
-        </div>
-      </div>
-      <div class="event3">
-        <div class="event3_right">
-          <h3>Thousands celebrities at Johnnie Night</h3>
-          <div class="events_details">
-            <p><i class="fa-solid fa-location-dot"></i>Restaurant Resto</p>
-            <p><i class="fa-regular fa-clock"></i>10:00pm - 6:00am</p>
-          </div>
-          <h3>buy tickets</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="ceo_message">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-      quibusdam quae asperiores odio animi autem magnam placeat perferendis
-      tempore repudiandae aspernatur, deleniti, esse blanditiis vero
-      doloribus? Reprehenderit odio optio cupiditate fugit, quaerat ea autem
-      corporis quis, laborum explicabo eius illum.
-    </p>
-    <h3>Russel Stepehns</h3>
-    <h4>CEO - HeadPassion</h4>
-  </section>
-  <footer>
-    <div class="footer_left">
-      <div class="footer_left_container">
+  <body>
+    <header>
+      <nav>
         <h2>Resto</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-          quaerat asperiores accusantium impedit provident temporibus
-          repudiandae debitis laboriosam totam perspiciatis. Odit eaque
-          commodi sapiente labore!
-        </p>
-      </div>
-    </div>
-    <div class="footer_right">
-      <div class="footer_right_container">
-        <div class="news">
-          <h4>newsletter</h4>
-          <input type="email" placeholder="Your email address" />
+        <ul>
+          <li>home</li>
+          <li>reservations</li>
+          <li>menu</li>
+          <li>blog</li>
+          <li>pages</li>
+          <li>shop</li>
+          <li>contact</li>
+        </ul>
+        <div class="header_socials">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
         </div>
-        <div class="socials_footer">
-          <h4>follow us</h4>
-          <div class="socials_footer-container">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-pinterest"></i>
+      </nav>
+      <div class="header-container">
+        <h2>Welcome to</h2>
+        <h1>the resto</h1>
+        <img
+          src="./assets/img/ic-plate-big.png"
+          alt="logo cuillere et fouchette"
+        />
+        <p>we serve only the freshest ingredients !</p>
+      </div>
+    </header>
+    <section class="discover">
+      <div class="discover_left">
+        <div class="discover_left_container">
+          <h3>Discover</h3>
+          <h4>our store</h4>
+          <img
+            src="./assets/img/ic-plate.png"
+            alt="logo cuillere et fouchette"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            iusto delectus rem ex esse rerum maiores perferendis, tempore quia
+            fuga saepe sit fugit sint eveniet cupiditate voluptatum eum earum
+            ullam consectetur est blanditiis quidem vel!
+          </p>
+          <img
+            src="./assets/img/avatar-01.jpg"
+            alt="chef cock image"
+            id="avatar1"
+          />
+          <h5>Russell Stephens</h5>
+          <p id="chefcock">chef cock</p>
+        </div>
+      </div>
+      <div class="discover_right"></div>
+    </section>
+    <section class="menu">
+      <h3>Discover</h3>
+      <img
+        src="./assets/img/ic-plate.png"
+        alt="logo cuillere et fouchette"
+        id="menu_logo"
+      />
+      <ul>
+        <li>Breakfast</li>
+        <li>Lunch</li>
+        <li>Dinner</li>
+        <li>Drinks</li>
+        <li>Other</li>
+      </ul>
+      <div class="menus">
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-01.jpg" alt="mushrrom" />
+            <div class="details">
+              <h4>italian source mushroom</h4>
+              <p>Mushrrom / Garlic / Veggies</p>
+            </div>
+          </div>
+          <h4 class="price">$12</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-02.jpg" alt="fried" />
+            <div class="details">
+              <h4>fried potatoes with garlic</h4>
+              <p>Potatoes / Oilive Oil / Garlic</p>
+            </div>
+          </div>
+          <h4 class="price">$22</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-03.jpg" alt="tenu" />
+            <div class="details">
+              <h4>tenu roast source</h4>
+              <p>Tuna / Potatoes / Rice</p>
+            </div>
+          </div>
+          <h4 class="price">$15</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-04.jpg" alt="pork" />
+            <div class="details">
+              <h4>roast pork (4sticks)</h4>
+              <p>Pork / Veggies / Shoyu</p>
+            </div>
+          </div>
+          <h4 class="price">$18</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-05.jpg" alt="chicken" />
+            <div class="details">
+              <h4>salted fried chicken</h4>
+              <p>Chicken / Oilve Oil / Salt</p>
+            </div>
+          </div>
+          <h4 class="price">$20</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-06.jpg" alt="crab" />
+            <div class="details">
+              <h4>crab with curry sources</h4>
+              <p>Crab / Potatoes / Rice</p>
+            </div>
+          </div>
+          <h4 class="price">$14</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-07.jpg" alt="slamon steak" />
+            <div class="details">
+              <h4>imported slamon steak</h4>
+              <p>Salmon / Veggies / Oil</p>
+            </div>
+          </div>
+          <h4 class="price">$16</h4>
+        </div>
+        <div class="description">
+          <div class="description_left">
+            <img src="./assets/img/dish-item-08.jpg" alt="pizza" />
+            <div class="details">
+              <h4>baked potato pizza</h4>
+              <p>Potato / Bread / Cheese</p>
+            </div>
+          </div>
+          <h4 class="price">$25</h4>
+        </div>
+      </div>
+    </section>
+    <section class="info_resto">
+      <div class="reservation">
+        <div class="reservation_left">
+          <div class="reservation_left_container">
+            <h2 id="time_reservation_title">Time</h2>
+            <h2 id="open_reservation-title">open</h2>
+            <img
+              src="./assets/img/ic-plate.png"
+              alt="logo cuillere et fouchette"
+            />
+            <h2>monday - friday</h2>
+            <p>7AM - 11AM(Breakfast) <br />11AM - 10PM(Lunch/Dinner)</p>
+            <h2>saturday - sunday</h2>
+            <p>8AM - 1PM(Brunch) <br />1PM - 9PM(Lunch/Dinner)</p>
+            <h2>+15 890 979 25 52</h2>
+          </div>
+        </div>
+        <div class="reservation_right">
+          <h2 id="reservation_title">Reservation</h2>
+          <h2>online booking</h2>
+          <img
+            src="./assets/img/ic-plate.png"
+            alt="logo cuillere et fouchette"
+          />
+          <div class="formulaire_reservation">
+            <form action="action.php">
+              <div class="formulaire">
+                <div class="people">
+                  <input
+                    list="numbers"
+                    name="people"
+                    id="people"
+                    placeholder="People"
+                  />
+                  <datalist id="numbers">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </datalist>
+                </div>
+                <div class="date">
+                  <input
+                    type="date"
+                    id="start"
+                    value="2020-07-15"
+                    min="2018-01-01"
+                    max="2023-12-31"
+                  />
+                </div>
+                <div class="time_reservation">
+                  <input
+                    type="time"
+                    id="appt"
+                    min="09:00"
+                    max="19:00"
+                    required
+                  />
+                </div>
+                <div class="name">
+                  <input type="text" id="name" placeholder="Name" />
+                </div>
+                <div class="phone">
+                  <input type="text" id="phone" placeholder="Phone" />
+                </div>
+                <div class="mail">
+                  <input type="email" id="mail" placeholder="Email" />
+                </div>
+              </div>
+              <div class="submit-button">
+                <input type="submit" id="submit_button" value="BOOK NOW" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </section>
+    <section class="event">
+      <h2>Upcoming</h2>
+      <h2>our event</h2>
+      <img src="./assets/img/ic-plate.png" alt="logo cuillere et fouchette" />
+      <div class="event_container">
+        <div class="event1">
+          <img src="./assets/img/event-01.jpg" alt="image event 1" />
+          <div class="event1_right">
+            <h3>Night Inspirescu Party</h3>
+            <div class="events_details">
+              <p><i class="fa-solid fa-location-dot"></i>Restaurant Resto</p>
+              <p><i class="fa-regular fa-clock"></i>10:00pm - 6:00am</p>
+            </div>
+            <h3>buy tickets</h3>
+          </div>
+        </div>
+        <div class="event2">
+          <img src="./assets/img/event-02.jpg" alt="image event 1" />
+          <div class="event2_right">
+            <h3>DJ RobagRuhme</h3>
+            <div class="events_details">
+              <p><i class="fa-solid fa-location-dot"></i>Restaurant Resto</p>
+              <p><i class="fa-regular fa-clock"></i>10:00pm - 6:00am</p>
+            </div>
+            <h3>buy tickets</h3>
+          </div>
+        </div>
+        <div class="event3">
+          <div class="event3_right">
+            <h3>Thousands celebrities at Johnnie Night</h3>
+            <div class="events_details">
+              <p><i class="fa-solid fa-location-dot"></i>Restaurant Resto</p>
+              <p><i class="fa-regular fa-clock"></i>10:00pm - 6:00am</p>
+            </div>
+            <h3>buy tickets</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ceo_message">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+        quibusdam quae asperiores odio animi autem magnam placeat perferendis
+        tempore repudiandae aspernatur, deleniti, esse blanditiis vero
+        doloribus? Reprehenderit odio optio cupiditate fugit, quaerat ea autem
+        corporis quis, laborum explicabo eius illum.
+      </p>
+      <h3>Russel Stepehns</h3>
+      <h4>CEO - HeadPassion</h4>
+    </section>
+    <footer>
+      <div class="footer_left">
+        <div class="footer_left_container">
+          <h2>Resto</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            quaerat asperiores accusantium impedit provident temporibus
+            repudiandae debitis laboriosam totam perspiciatis. Odit eaque
+            commodi sapiente labore!
+          </p>
+        </div>
+      </div>
+      <div class="footer_right">
+        <div class="footer_right_container">
+          <div class="news">
+            <h4>newsletter</h4>
+            <input type="email" placeholder="Your email address" />
+          </div>
+          <div class="socials_footer">
+            <h4>follow us</h4>
+            <div class="socials_footer-container">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
