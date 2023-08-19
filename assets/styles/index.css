@@ -557,6 +557,10 @@ nav .header_socials:hover {
   margin-left: 20px;
   text-transform: uppercase;
 }
+.event .event1 .event1_right h4:hover {
+  color: rgb(166, 114, 69);
+  cursor: pointer;
+}
 .event .event2 {
   grid-area: second;
   display: grid;
@@ -573,6 +577,7 @@ nav .header_socials:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 250px;
 }
 .event .event2 .event2_left .event2_left_container {
   height: 130px;
@@ -642,26 +647,28 @@ nav .header_socials:hover {
   margin-left: 20px;
   text-transform: uppercase;
 }
+.event .event2 .event2_right h4:hover {
+  color: rgb(166, 114, 69);
+  cursor: pointer;
+}
 .event .event3 {
   grid-area: third;
   background: url(../img/event-03.jpg) center/cover;
+  padding: 20px;
 }
 .event .event3 .event3_container {
   background-color: rgb(250, 250, 250);
-  margin: 20px;
+  height: 100%;
 }
-.event .event3 .event3_left {
+.event .event3 .event3_container .event3_top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.event .event3 .event3_left .event3_left_container {
+.event .event3 .event3_container .event3_top .event3_top_container {
   height: 130px;
   width: 130px;
   background-color: rgb(27, 27, 27);
@@ -680,50 +687,48 @@ nav .header_socials:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.event .event3 .event3_left .event3_left_container h3 {
+.event .event3 .event3_container .event3_top .event3_top_container h3 {
   font-family: Roboto;
   font-size: 2rem;
 }
-.event .event3 .event3_left .event3_left_container h4 {
+.event .event3 .event3_container .event3_top .event3_top_container h4 {
   font-family: Roboto;
   font-size: 1.5rem;
-  font-weight: normal;
 }
-.event .event3 .event3_right {
+.event .event3 .event3_container .event3_button {
   text-align: center;
 }
-.event .event3 .event3_right h3 {
+.event .event3 .event3_container .event3_button h3 {
+  text-align: center;
+  margin-top: 15px;
   font-family: Roboto;
-  font-size: 1.5rem;
-  width: 50%;
-  margin: 50px auto;
   font-weight: normal;
-}
-.event .event3 .event3_right h4 {
-  font-family: Roboto;
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 100px;
-  padding-bottom: 100px;
-  text-transform: uppercase;
 }
-.event .event3 .event3_right .events_details {
+.event .event3 .event3_container .event3_button .events_details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.event .event3 .event3_right .events_details p {
-  margin-right: 20px;
+.event .event3 .event3_container .event3_button .events_details p {
+  margin: 20px 5px auto 5px;
   color: gray;
 }
-.event .event3 .event3_right .events_details p i {
+.event .event3 .event3_container .event3_button .events_details p i {
   margin-right: 10px;
+}
+.event .event3 .event3_container .event3_button h4 {
+  margin-top: 150px;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.event .event3 .event3_container .event3_button h4:hover {
+  color: rgb(166, 114, 69);
+  cursor: pointer;
 }
 
 .ceo_message {
@@ -740,7 +745,7 @@ nav .header_socials:hover {
   position: absolute;
   border-radius: 100%;
   top: 0;
-  left: 50%;
+  left: 47%;
   -webkit-transform: translate(-50% -50%);
           transform: translate(-50% -50%);
 }

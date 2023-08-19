@@ -92,6 +92,11 @@
         font-family: Roboto;
         margin-left: 20px;
         text-transform: uppercase;
+
+        &:hover {
+          color: $color4;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -106,6 +111,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 250px;
 
       .event2_left_container {
         height: 130px;
@@ -156,6 +162,11 @@
         font-family: Roboto;
         margin-left: 20px;
         text-transform: uppercase;
+
+        &:hover {
+          color: $color4;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -163,63 +174,65 @@
   .event3 {
     grid-area: third;
     background: url(../img/event-03.jpg) center/cover;
+    padding: 20px;
 
     .event3_container {
       background-color: rgb(250, 250, 250);
-      margin: 20px;
-    }
-    .event3_left {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      height: 100%;
 
-      .event3_left_container {
-        height: 130px;
-        width: 130px;
-        background-color: rgb(27, 27, 27);
-        color: $color1;
+      .event3_top {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        h3 {
-          font-family: Roboto;
-          font-size: 2rem;
+
+        .event3_top_container {
+          height: 130px;
+          width: 130px;
+          background-color: rgb(27, 27, 27);
+          color: $color1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h3 {
+            font-family: Roboto;
+            font-size: 2rem;
+          }
+          h4 {
+            font-family: Roboto;
+            font-size: 1.5rem;
+          }
         }
-        h4 {
+      }
+      .event3_button {
+        text-align: center;
+        h3 {
+          text-align: center;
+          margin-top: 15px;
+          font-family: Roboto;
+          font-weight: normal;
+          font-size: 1.5rem;
+        }
+        .events_details {
+          display: flex;
+          justify-content: center;
+          p {
+            margin: 20px 5px auto 5px;
+            color: gray;
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+        h4{
+          margin-top: 150px;
           font-family: Roboto;
           font-size: 1.5rem;
-          font-weight: normal;
-        }
-      }
-    }
-    .event3_right {
-      text-align: center;
+          text-transform: uppercase;
 
-      h3 {
-        font-family: Roboto;
-        font-size: 1.5rem;
-        width: 50%;
-        margin: 50px auto;
-        font-weight: normal;
-      }
-      h4 {
-        font-family: Roboto;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-top: 100px;
-        padding-bottom: 100px;
-        text-transform: uppercase;
-      }
-      .events_details {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        p {
-          margin-right: 20px;
-          color: gray;
-          i {
-            margin-right: 10px;
+          &:hover {
+            color: $color4;
+            cursor: pointer;
           }
         }
       }
