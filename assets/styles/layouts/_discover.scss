@@ -1,0 +1,56 @@
+.discover {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .discover_left {
+    text-align: center;
+    padding: 20px;
+    background-color: $color5;
+    .discover_left_container {
+      border: 2px dashed $color4;
+      padding: 30px 10px;
+
+      h3 {
+        color: $color4;
+        font-family: Allura;
+        font-size: 3rem;
+        font-weight: normal;
+      }
+      h4 {
+        font-family: Poppins;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        margin-top: -10px;
+      }
+      img {
+        margin-top: 30px;
+      }
+      p {
+        margin-top: 20px;
+        font-family: Roboto;
+      }
+      #avatar1 {
+        border-radius: 100%;
+        width: 10%;
+      }
+      h5 {
+        font-family: Poppins;
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 1.2rem;
+      }
+      #chefcock {
+        margin-top: 0px;
+        font-family: Poppins;
+        text-transform: uppercase;
+        color: gray;
+      }
+    }
+  }
+  .discover_right {
+    background: url(../img/discoverpage.jpg) center/cover;
+    width: 100%;
+    height: 100%;
+  }
+}
