@@ -1,0 +1,113 @@
+.menu{
+    background-color: $color3;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 100px;
+
+    &::after{
+        content: "";
+        background: url(../img/bg-menu-01.jpg) center/cover no-repeat;
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        z-index: -1;
+        top: 30%;
+        transform: translate(-50% -50%);
+    }
+
+    h3{
+        color: $color4;
+        font-family: Allura;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 50px;
+    }
+    #menu_logo{
+        margin: 0 auto;
+        display: flex;
+        margin-top: 30px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin: 40px auto 100px auto;
+        li{
+            list-style: none;
+            color: $color1;
+            font-family: Roboto;
+            position: relative;
+            
+            &::after{
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: gray;
+                position: absolute;
+                transform: translate(-50% -50%);
+                left: 0%;
+                top: 30px;
+            }
+            &:hover {
+                color: $color4;
+                cursor: pointer;
+              }
+        }
+    }
+    .menus{
+        background-color: $color5;
+        display: grid;
+        width: 60%;
+        margin: 0 auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        .description{
+            align-items: center;
+            display: grid;
+            grid-template-columns: 80% 20%;
+            margin: 40px 20px 40px 20px;
+            position: relative;
+
+            &::after{
+                content: "";
+                width: 90%;
+                height: 1px;
+                border-bottom: 1px dashed gray;
+                position: absolute;
+                left: 0;
+                transform: translate(-50% -50%);
+                top: 120%;
+            }
+
+            .price{
+                font-family: Poppins;
+                color: $color4;
+                font-weight: normal;
+                font-size: 1.3rem;
+            }
+            .description_left{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                img{
+                    border-radius: 100%;
+                }
+                h4{
+                    text-transform: uppercase;
+                    font-family: Roboto;
+                    font-size: 0.9rem;
+                    margin-left: 20px;
+                }
+                p{
+                    font-family: Roboto;
+                    font-size: 1.2rem;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}

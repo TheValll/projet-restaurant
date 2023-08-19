@@ -1,7 +1,8 @@
 @import "./settings";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/discover";
+@import "./layouts/_header";
+@import "./layouts/_nav";
+@import "./layouts/_discover";
+@import "./layouts/_menus";
 
 * {
   margin: 0;
