@@ -793,7 +793,7 @@ footer .footer_left {
   grid-template-columns: 30% 70%;
 }
 footer .footer_left .footer_left_container {
-  margin: 70px 30px 50px auto;
+  margin: 50px 30px 50px auto;
 }
 footer .footer_left .footer_left_container h2 {
   color: rgb(166, 114, 69);
@@ -825,7 +825,7 @@ footer .footer_right .footer_right_container h4 {
   width: 20%;
 }
 footer .footer_right .footer_right_container input {
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: transparent;
   border: 1px solid white;
   height: 30px;

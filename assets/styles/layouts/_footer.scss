@@ -8,7 +8,7 @@ footer{
         grid-template-columns: 30% 70%;
 
         .footer_left_container{
-            margin: 70px 30px 50px auto;
+            margin: 50px 30px 50px auto;
             h2{
                 color: $color4;
                 font-family: Allura;
@@ -37,7 +37,7 @@ footer{
                 width: 20%;
             }
             input{
-                margin-top: 10px;
+                margin-top: 20px;
                 background-color: transparent;
                 border: 1px solid $color1;
                 height: 30px;
