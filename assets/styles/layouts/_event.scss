@@ -2,6 +2,10 @@
   background-color: $color3;
   padding-bottom: 100px;
 
+  @media screen and (max-width: 800px){
+    display: none;
+  }
+
   #up_title {
     text-align: center;
     padding-top: 150px;

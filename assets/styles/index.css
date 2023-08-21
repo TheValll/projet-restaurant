@@ -53,6 +53,11 @@ nav h2 {
   font-family: Allura;
   font-size: 2.5rem;
 }
+@media screen and (max-width: 630px) {
+  nav h2 {
+    font-size: 1.5rem;
+  }
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +76,16 @@ nav li {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+@media screen and (max-width: 800px) {
+  nav li {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  nav li {
+    font-size: 0.6rem;
+  }
+}
 nav li:hover {
   color: rgb(166, 114, 69);
   cursor: pointer;
@@ -86,6 +101,11 @@ nav .header_socials {
       justify-content: space-around;
   width: 10%;
 }
+@media screen and (max-width: 630px) {
+  nav .header_socials {
+    font-size: 0.8rem;
+  }
+}
 nav .header_socials:hover {
   cursor: pointer;
 }
@@ -93,6 +113,11 @@ nav .header_socials:hover {
 .discover {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 800px) {
+  .discover {
+    display: none;
+  }
 }
 .discover .discover_left {
   text-align: center;
@@ -162,6 +187,18 @@ nav .header_socials:hover {
   -webkit-transform: translate(-50% -50%);
           transform: translate(-50% -50%);
 }
+@media screen and (max-width: 1250px) {
+  .menu::after {
+    height: 1400px;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu::after {
+    top: 50%;
+    height: 900px;
+  }
+}
 .menu h3 {
   color: rgb(166, 114, 69);
   font-family: Allura;
@@ -217,6 +254,12 @@ nav .header_socials:hover {
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+@media screen and (max-width: 1250px) {
+  .menu .menus {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 .menu .menus .description {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -243,6 +286,17 @@ nav .header_socials:hover {
   font-weight: normal;
   font-size: 1.3rem;
 }
+@media screen and (max-width: 800px) {
+  .menu .menus .description .price {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu .menus .description .price {
+    font-size: 0.7rem;
+    margin-left: 10px;
+  }
+}
 .menu .menus .description .description_left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,12 +317,32 @@ nav .header_socials:hover {
   font-size: 0.9rem;
   margin-left: 20px;
 }
+@media screen and (max-width: 800px) {
+  .menu .menus .description .description_left h4 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu .menus .description .description_left h4 {
+    font-size: 0.5rem;
+  }
+}
 .menu .menus .description .description_left p {
   font-family: Roboto;
   font-size: 1.2rem;
   margin-left: 20px;
   margin-top: 10px;
   color: gray;
+}
+@media screen and (max-width: 800px) {
+  .menu .menus .description .description_left p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu .menus .description .description_left p {
+    font-size: 0.7rem;
+  }
 }
 
 .info_resto {
@@ -283,6 +357,20 @@ nav .header_socials:hover {
 .info_resto .reservation .reservation_left {
   text-align: center;
   background-color: black;
+}
+@media screen and (max-width: 1600px) {
+  .info_resto .reservation .reservation_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .info_resto .reservation .reservation_left .reservation_left_container {
   border: 1px dashed white;
@@ -315,10 +403,30 @@ nav .header_socials:hover {
   font-weight: normal;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1250px) {
+  .info_resto .reservation .reservation_left h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .info_resto .reservation .reservation_left h2 {
+    font-size: 0.8rem;
+  }
+}
 .info_resto .reservation .reservation_left p {
   font-family: Roboto;
   color: white;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 900px) {
+  .info_resto .reservation .reservation_left p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info_resto .reservation .reservation_left p {
+    font-size: 0.5rem;
+  }
 }
 .info_resto .reservation .reservation_right {
   padding-top: 50px;
@@ -354,6 +462,13 @@ nav .header_socials:hover {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1600px) {
+  .info_resto .reservation .formulaire {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 .info_resto .reservation .formulaire .people,
 .info_resto .reservation .formulaire .date,
 .info_resto .reservation .formulaire .time_reservation,
@@ -378,6 +493,16 @@ nav .header_socials:hover {
   left: 0;
   top: 130%;
 }
+@media screen and (max-width: 1600px) {
+  .info_resto .reservation .formulaire .people::after,
+  .info_resto .reservation .formulaire .date::after,
+  .info_resto .reservation .formulaire .time_reservation::after,
+  .info_resto .reservation .formulaire .name::after,
+  .info_resto .reservation .formulaire .phone::after,
+  .info_resto .reservation .formulaire .mail::after {
+    width: 80%;
+  }
+}
 .info_resto .reservation .formulaire input {
   width: 200px;
   margin-top: 50px;
@@ -385,6 +510,11 @@ nav .header_socials:hover {
   border: none;
   position: relative;
   cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+  .info_resto .reservation .formulaire input {
+    width: 70%;
+  }
 }
 .info_resto .reservation .formulaire input::-webkit-input-placeholder {
   color: black;
@@ -431,6 +561,11 @@ nav .header_socials:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+@media screen and (max-width: 1600px) {
+  .info_resto .reservation #submit_button {
+    margin-bottom: 20px;
+  }
+}
 .info_resto .reservation #submit_button:hover {
   background-color: gray;
 }
@@ -438,6 +573,11 @@ nav .header_socials:hover {
 .event {
   background-color: rgb(27, 27, 27);
   padding-bottom: 100px;
+}
+@media screen and (max-width: 800px) {
+  .event {
+    display: none;
+  }
 }
 .event #up_title {
   text-align: center;
@@ -735,6 +875,11 @@ nav .header_socials:hover {
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width: 800px) {
+  .ceo_message {
+    padding-top: 150px;
+  }
+}
 .ceo_message .message::before {
   content: "";
   height: 100px;
@@ -747,6 +892,24 @@ nav .header_socials:hover {
   -webkit-transform: translate(-50% -50%);
           transform: translate(-50% -50%);
 }
+@media screen and (max-width: 800px) {
+  .ceo_message .message::before {
+    top: 10%;
+    left: 45%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .ceo_message .message::before {
+    top: 10%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .ceo_message .message::before {
+    top: 10%;
+    left: 40%;
+  }
+}
 .ceo_message .message::after {
   content: "";
   height: 600px;
@@ -755,6 +918,12 @@ nav .header_socials:hover {
   position: absolute;
   top: 20%;
   z-index: -1;
+}
+@media screen and (max-width: 800px) {
+  .ceo_message .message::after {
+    top: 30%;
+    height: 700px;
+  }
 }
 .ceo_message .message_container {
   background-color: rgb(250, 250, 250);
@@ -768,11 +937,26 @@ nav .header_socials:hover {
   line-height: 40px;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 750px) {
+  .ceo_message .message_container p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ceo_message .message_container p {
+    font-size: 0.6rem;
+  }
+}
 .ceo_message .message_container h3 {
   margin-top: 40px;
   font-family: Roboto;
   font-size: 2rem;
   font-weight: normal;
+}
+@media screen and (max-width: 750px) {
+  .ceo_message .message_container h3 {
+    font-size: 1.3rem;
+  }
 }
 .ceo_message .message_container h4 {
   margin-top: 20px;
@@ -781,12 +965,22 @@ nav .header_socials:hover {
   font-size: 1.3rem;
   font-weight: normal;
 }
+@media screen and (max-width: 750px) {
+  .ceo_message .message_container h4 {
+    font-size: 0.9rem;
+  }
+}
 
 footer {
   background: url(../img/bg-footer.jpg) center/cover;
   display: grid;
   grid-template-columns: 50% 50%;
   padding-top: 200px;
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: none;
+  }
 }
 footer .footer_left {
   display: grid;
@@ -822,7 +1016,7 @@ footer .footer_right .footer_right_container h4 {
   color: white;
   font-family: Roboto;
   text-transform: uppercase;
-  width: 20%;
+  width: 40%;
 }
 footer .footer_right .footer_right_container input {
   margin-top: 20px;
