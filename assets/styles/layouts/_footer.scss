@@ -1,65 +1,65 @@
-footer{
-    background: url(../img/bg-footer.jpg) center/cover;
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 200px;
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+
+  .footer_left {
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding-top: 200px;
+    grid-template-columns: 30% 70%;
 
-    @media screen and (max-width: 750px){
-        display: none;
+    .footer_left_container {
+      margin: 50px 30px 50px auto;
+      h2 {
+        color: $color4;
+        font-family: Allura;
+        font-size: 3rem;
+        font-weight: normal;
       }
-      
-    .footer_left{
-        display: grid;
-        grid-template-columns: 30% 70%;
-
-        .footer_left_container{
-            margin: 50px 30px 50px auto;
-            h2{
-                color: $color4;
-                font-family: Allura;
-                font-size: 3rem;
-                font-weight: normal;
-            }
-            p{
-                margin-top: 10px;
-                font-family: Roboto;
-                line-height: 30px;
-                color: rgb(201, 201, 201);
-            }
-        } 
+      p {
+        margin-top: 10px;
+        font-family: Roboto;
+        line-height: 30px;
+        color: rgb(201, 201, 201);
+      }
     }
-    .footer_right{
+  }
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto 50px 30px;
+    width: 70%;
+
+    .footer_right_container {
+      h4 {
+        color: $color1;
+        font-family: Roboto;
+        text-transform: uppercase;
+        width: 40%;
+      }
+      input {
+        margin-top: 20px;
+        background-color: transparent;
+        border: 1px solid $color1;
+        height: 30px;
+        padding: 10px;
+      }
+      .socials_footer {
+        margin-top: 50px;
         display: flex;
-        flex-direction: column;
-        margin: 70px auto 50px 30px;
-        width: 70%;
+        justify-content: start;
 
-        .footer_right_container{
-            h4{
-                color: $color1;
-                font-family: Roboto;
-                text-transform: uppercase;
-                width: 40%;
-            }
-            input{
-                margin-top: 20px;
-                background-color: transparent;
-                border: 1px solid $color1;
-                height: 30px;
-                padding: 10px;
-            }
-            .socials_footer{
-                margin-top: 50px;
-                display: flex;
-                justify-content: start;
-
-                .socials_footer-container{
-                    display: flex;
-                    justify-content: space-between;
-                    width: 50%;
-                    color: $color1;
-                }
-            }
+        .socials_footer-container {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+          color: $color1;
         }
+      }
     }
+  }
 }

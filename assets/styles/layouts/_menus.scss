@@ -13,11 +13,11 @@
     z-index: -1;
     top: 40%;
     transform: translate(-50% -50%);
-    @media screen and (max-width: 1250px){
+    @media screen and (max-width: 1250px) {
       height: 1400px;
-      top: 25%
+      top: 25%;
     }
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 800px) {
       top: 50%;
       height: 900px;
     }
@@ -71,7 +71,7 @@
     margin: 0 auto;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    @media screen and (max-width: 1250px){
+    @media screen and (max-width: 1250px) {
       grid-template-columns: 100%;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -99,10 +99,10 @@
         color: $color4;
         font-weight: normal;
         font-size: 1.3rem;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 800px) {
           font-size: 0.9rem;
         }
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 600px) {
           font-size: 0.7rem;
           margin-left: 10px;
         }
@@ -119,10 +119,10 @@
           font-family: Roboto;
           font-size: 0.9rem;
           margin-left: 20px;
-          @media screen and (max-width: 800px){
+          @media screen and (max-width: 800px) {
             font-size: 0.7rem;
           }
-          @media screen and (max-width: 600px){
+          @media screen and (max-width: 600px) {
             font-size: 0.5rem;
           }
         }
@@ -132,10 +132,10 @@
           margin-left: 20px;
           margin-top: 10px;
           color: gray;
-          @media screen and (max-width: 800px){
+          @media screen and (max-width: 800px) {
             font-size: 0.9rem;
           }
-          @media screen and (max-width: 600px){
+          @media screen and (max-width: 600px) {
             font-size: 0.7rem;
           }
         }
